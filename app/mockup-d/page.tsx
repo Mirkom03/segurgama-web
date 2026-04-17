@@ -10,6 +10,7 @@ import {
 } from "@/lib/content";
 import HeroSelector from "./_components/HeroSelector";
 import CtaForm from "./_components/CtaForm";
+import NavMega from "./_components/NavMega";
 import "./mockup-d.css";
 
 const ramoIcons: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number }>> = {
@@ -80,17 +81,7 @@ export default function MockupDPage() {
               style={{ height: 40, width: "auto", display: "block" }}
             />
           </Link>
-          <nav className="d-nav__links">
-            <a href="#ramos" className="d-nav__link">Ramos</a>
-            <a href="#humanos-vs-bots" className="d-nav__link">Humanos vs bots</a>
-            <a href="#plan" className="d-nav__link">Cómo funciona</a>
-            <a href="#equipo" className="d-nav__link">Equipo</a>
-            <a href="#faq" className="d-nav__link">FAQ</a>
-          </nav>
-          <a href="#cotiza" className="d-nav__cta">
-            Cotizar ahora
-            <ArrowRight size={14} strokeWidth={2.5} />
-          </a>
+          <NavMega ramos={ramos} telefono={empresa.telefono} />
         </div>
       </header>
 
