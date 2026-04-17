@@ -84,7 +84,7 @@ export default function MockupAPage() {
             />
           </Link>
           <nav className="a-nav__links">
-            <a href="#ramos" className="a-nav__link">Ramos</a>
+            <a href="#ramos" className="a-nav__link">Seguros</a>
             <a href="#diferenciador" className="a-nav__link">Por qué nosotros</a>
             <a href="#plan" className="a-nav__link">Cómo funciona</a>
             <a href="#equipo" className="a-nav__link">Equipo</a>
@@ -111,7 +111,7 @@ export default function MockupAPage() {
                 Un corredor humano. <em>Todas las aseguradoras.</em>
               </h1>
               <p className="a-hero__subtitle">
-                Somos corredores titulados con 35 años comparando el mercado. En 24 horas te traemos la mejor póliza para tu caso, incluidos los ramos especializados que otras aseguradoras rechazan.
+                Somos corredores titulados con 35 años comparando el mercado. En 24 horas te traemos la mejor póliza para tu caso, incluidos los seguros especializados que otras aseguradoras rechazan.
               </p>
 
               <div className="a-hero__chips">
@@ -125,7 +125,7 @@ export default function MockupAPage() {
                   );
                 })}
                 <a href="#ramos" className="a-hero__chip" style={{ fontWeight: 600 }}>
-                  + 12 ramos más
+                  + 12 seguros más
                 </a>
               </div>
 
@@ -242,7 +242,7 @@ export default function MockupAPage() {
                   <FileWarning size={18} strokeWidth={2} />
                 </div>
                 <div>
-                  <h3 className="a-problem__item-title">Las grandes aseguradoras rechazan los ramos especializados</h3>
+                  <h3 className="a-problem__item-title">Las grandes aseguradoras rechazan los seguros especializados</h3>
                   <p className="a-problem__item-body">
                     Coche clásico, embarcación, maquinaria agrícola, mascota exótica, dron, RC deportiva. Las compañías directas las rechazan o aplican primas desproporcionadas.
                   </p>
@@ -258,7 +258,7 @@ export default function MockupAPage() {
         <div className="a-container">
           <div className="a-ramos__header">
             <div>
-              <span className="a-kicker">Ramos que cubrimos</span>
+              <span className="a-kicker">Seguros que cubrimos</span>
               <h2 className="a-display a-ramos__title" style={{ marginTop: "0.5rem" }}>
                 Elige qué quieres asegurar.
               </h2>
@@ -314,7 +314,7 @@ export default function MockupAPage() {
 
             <div className="a-differ__copy">
               <h2 className="a-display a-differ__title">
-                Una correduría multi-aseguradora, multi-ramo. Humana, titulada y sin letra pequeña inventada.
+                Una correduría multi-aseguradora, multi-producto. Humana, titulada y sin letra pequeña inventada.
               </h2>
               <div className="a-differ__pillars">
                 {diferenciadores.map((d) => {
@@ -391,7 +391,7 @@ export default function MockupAPage() {
               { nombre: "Marta Delgado", rol: "Coordinación general · Autos y hogar", tag: "35 años" },
               { nombre: "Carlos Vidal", rol: "Empresa · industria · construcción", tag: "22 años" },
               { nombre: "Lucía Ferrer", rol: "Salud · vida · decesos", tag: "18 años" },
-              { nombre: "Andrés Torres", rol: "Náutica · agro · ramos especiales", tag: "14 años" },
+              { nombre: "Andrés Torres", rol: "Náutica · agro · seguros especiales", tag: "14 años" },
             ].map((p, i) => (
               <article key={i} className="a-team__card">
                 <div className="a-team__photo-slot" aria-label={`Foto cliente · retrato 4:5 de ${p.nombre}`}>
@@ -489,7 +489,7 @@ export default function MockupAPage() {
           <div className="a-cta-final__inner">
             <div>
               <span className="a-kicker" style={{ color: "var(--a-amber)" }}>
-                Empieza por tu ramo
+                Empieza por tu seguro
               </span>
               <h2 className="a-display a-cta-final__title" style={{ marginTop: "0.75rem" }}>
                 Cuéntanos qué quieres asegurar y <em>te llamamos hoy.</em>
@@ -548,7 +548,7 @@ export default function MockupAPage() {
               </span>
             </div>
             <div className="a-footer__col">
-              <h4>Ramos</h4>
+              <h4>Seguros</h4>
               <ul className="a-footer__links">
                 {ramos.slice(0, 7).map((r) => (
                   <li key={r.slug}>

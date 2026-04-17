@@ -137,7 +137,7 @@ export default function NavMega({ ramos, telefono }: Props) {
           </div>
           <div className="d-mega__foot">
             <span className="d-mega__foot-line">
-              35 años especializándonos en ramos difíciles — incluidos los que otras aseguradoras rechazan.
+              35 años especializándonos en seguros difíciles — incluidos los que otras aseguradoras rechazan.
             </span>
             <div className="d-mega__foot-ctas">
               <a
@@ -145,7 +145,7 @@ export default function NavMega({ ramos, telefono }: Props) {
                 className="d-mega__foot-link"
                 onClick={closeAll}
               >
-                Ver todos los ramos
+                Ver todos los seguros
                 <ArrowUpRight size={13} strokeWidth={2.5} />
               </a>
               <a

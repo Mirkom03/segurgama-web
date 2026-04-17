@@ -109,7 +109,7 @@ export const ramos: Ramo[] = [
     group: "especial",
     title: "Ramos especializados",
     blurb: "Drones, eventos, embarcaciones de recreo, colecciones, bodegas, viñedos, galerías, perfiles atípicos.",
-    highlights: ["Cobertura en ramos especializados", "Riesgos específicos", "Asesoramiento personalizado"],
+    highlights: ["Cobertura para perfiles atípicos", "Riesgos específicos", "Asesoramiento personalizado"],
     cta: "Solicitar asesoramiento",
   },
 ];
@@ -131,7 +131,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "Tengo un coche clásico, maquinaria agrícola, barco o mascota exótica. ¿Lo cubrís?",
-    a: "Sí. Llevamos 35 años trabajando con ramos especializados que las aseguradoras directas suelen rechazar: vehículos clásicos, maquinaria agrícola, embarcaciones de recreo, reptiles, aves rapaces, bodegas, drones, eventos y otros nichos. Si existe una aseguradora en España que lo cubra, la encontramos.",
+    a: "Sí. Llevamos 35 años trabajando con seguros especializados que las aseguradoras directas suelen rechazar: vehículos clásicos, maquinaria agrícola, embarcaciones de recreo, reptiles, aves rapaces, bodegas, drones, eventos y otros nichos. Si existe una aseguradora en España que lo cubra, la encontramos.",
   },
   {
     q: "¿Qué pasa si tengo un siniestro?",
@@ -139,7 +139,7 @@ export const faqs: Faq[] = [
   },
   {
     q: "¿Cuánto tarda en llegarme la cotización?",
-    a: "Para la mayoría de ramos, 24-48 horas laborables. Casos complejos (industria, náutica, riesgos especiales) pueden llevar 3-5 días porque consultamos a más aseguradoras.",
+    a: "Para la mayoría de seguros, 24-48 horas laborables. Casos complejos (industria, náutica, riesgos especiales) pueden llevar 3-5 días porque consultamos a más aseguradoras.",
   },
   {
     q: "¿Puedo anular mi póliza actual y traerla a vosotros?",
@@ -193,7 +193,7 @@ export type TrustStat = { value: string; label: string };
 export const trustStats: TrustStat[] = [
   { value: "35+", label: "años de experiencia" },
   { value: "10.000+", label: "clientes en España [TBC]" },
-  { value: "20+", label: "ramos especializados" },
+  { value: "20+", label: "seguros cubiertos" },
   { value: "100%", label: "empleados titulados DGSFP" },
   { value: "5", label: "idiomas: ES · EN · CA · VAL · GL" },
 ];
@@ -225,7 +225,7 @@ export const planSteps: PlanStep[] = [
     step: "01",
     title: "Cuéntanos qué quieres asegurar",
     description:
-      "Elige ramo y rellena el formulario corto (2 minutos). Si es una cobertura específica o un ramo especializado, llámanos directamente.",
+      "Elige el seguro y rellena el formulario corto (2 minutos). Si es una cobertura específica o un seguro especializado, llámanos directamente.",
   },
   {
     step: "02",
@@ -259,7 +259,7 @@ export const diferenciadores: Diferenciador[] = [
     icon: "Scale",
   },
   {
-    title: "Especialistas en ramos difíciles",
+    title: "Especialistas en seguros difíciles",
     body: "Vehículos clásicos, maquinaria agrícola, embarcaciones, RC deportiva, mascotas exóticas, maquinaria industrial. Coberturas específicas que las grandes aseguradoras suelen rechazar.",
     icon: "Sparkles",
   },

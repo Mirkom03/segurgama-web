@@ -17,7 +17,7 @@ export default function CtaForm({ ramos }: { ramos: Ramo[] }) {
       <div className="c-field">
         <label htmlFor="c-ramo">¿Qué quieres asegurar?</label>
         <select id="c-ramo" defaultValue="">
-          <option value="" disabled>Elige un ramo</option>
+          <option value="" disabled>Elige un seguro</option>
           {ramos.map((r) => (
             <option key={r.slug} value={r.slug}>{r.title}</option>
           ))}

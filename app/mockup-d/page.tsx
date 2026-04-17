@@ -95,7 +95,7 @@ export default function MockupDPage() {
                 Decenas de aseguradoras. <em>Un corredor humano.</em>
               </h1>
               <p className="d-hero__sub">
-                Desde 1990 buscamos la mejor póliza del mercado para ti, incluidos los ramos especializados (vehículos clásicos, maquinaria agrícola, náutica, mascotas exóticas). Sin sistemas automáticos ni centralitas impersonales.
+                Desde 1990 buscamos la mejor póliza del mercado para ti, incluidos los seguros especializados (vehículos clásicos, maquinaria agrícola, náutica, mascotas exóticas). Sin sistemas automáticos ni centralitas impersonales.
               </p>
               <div className="d-hero__cta">
                 <a href="#cotiza" className="d-btn d-btn--primary">
@@ -196,7 +196,7 @@ export default function MockupDPage() {
                 <li><X size={15} strokeWidth={2.5} />Te derivan a una centralita sin memoria: operador distinto cada llamada</li>
                 <li><X size={15} strokeWidth={2.5} />Solo comparan precio base, no coberturas reales</li>
                 <li><X size={15} strokeWidth={2.5} />Si tienes un siniestro, te dejan solo ante la aseguradora</li>
-                <li><X size={15} strokeWidth={2.5} />No cubren ramos especializados: clásicos, náutica, agrícola, exóticos</li>
+                <li><X size={15} strokeWidth={2.5} />No cubren seguros especializados: clásicos, náutica, agrícola, exóticos</li>
                 <li><X size={15} strokeWidth={2.5} />Nadie recuerda tu historial cuando renuevas</li>
               </ul>
             </article>
@@ -210,7 +210,7 @@ export default function MockupDPage() {
                 <li><Check size={15} strokeWidth={2.5} />Te atiende siempre la misma persona titulada DGSFP</li>
                 <li><Check size={15} strokeWidth={2.5} />Comparamos cobertura real con letra pequeña traducida</li>
                 <li><Check size={15} strokeWidth={2.5} />Gestionamos tu siniestro y peleamos plazos por ti</li>
-                <li><Check size={15} strokeWidth={2.5} />Cubrimos ramos especializados — 35 años buscando pólizas</li>
+                <li><Check size={15} strokeWidth={2.5} />Cubrimos seguros especializados — 35 años buscando pólizas</li>
                 <li><Check size={15} strokeWidth={2.5} />Conocemos tu historial entero cuando toca renovar</li>
               </ul>
             </article>
@@ -259,7 +259,7 @@ export default function MockupDPage() {
               <li className="d-problem__item">
                 <span className="d-problem__item-num">04</span>
                 <div>
-                  <h3 className="d-problem__item-title">Los ramos especializados casi nadie los cubre</h3>
+                  <h3 className="d-problem__item-title">Los seguros especializados casi nadie los cubre</h3>
                   <p className="d-problem__item-body">
                     Vehículo clásico, maquinaria agrícola, embarcación, mascota exótica, dron. Las grandes compañías los rechazan o aplican primas desproporcionadas.
                   </p>
@@ -275,11 +275,11 @@ export default function MockupDPage() {
         <div className="d-container">
           <div className="d-ramos__head">
             <div>
-              <span className="d-kicker">Ramos que cubrimos</span>
+              <span className="d-kicker">Seguros que cubrimos</span>
               <h2 className="d-heading d-ramos__title">Elige qué quieres asegurar.</h2>
             </div>
             <p className="d-ramos__sub">
-              Más de 20 ramos, desde coche y hogar hasta bodegas, drones y mascotas exóticas. Si alguien lo cubre en España, lo encontramos nosotros.
+              Más de 20 seguros, desde coche y hogar hasta bodegas, drones y mascotas exóticas. Si alguien lo cubre en España, lo encontramos nosotros.
             </p>
           </div>
 
@@ -464,7 +464,7 @@ export default function MockupDPage() {
                 Un corredor humano te llama <em>en menos de 10 minutos.</em>
               </h2>
               <p className="d-cta__sub">
-                Formulario corto (2 minutos). Te llama un corredor titulado con la mejor póliza del mercado, también para ramos especializados.
+                Formulario corto (2 minutos). Te llama un corredor titulado con la mejor póliza del mercado, también para seguros especializados.
               </p>
               <a
                 href={`tel:${empresa.telefono.replace(/\s/g, "")}`}
@@ -508,7 +508,7 @@ export default function MockupDPage() {
               <span className="d-footer__dgsfp">DGSFP · Nº {empresa.dgsfpNumero}</span>
             </div>
             <div className="d-footer__col">
-              <h4>Ramos</h4>
+              <h4>Seguros</h4>
               <ul className="d-footer__links">
                 {ramos.slice(0, 7).map((r) => (
                   <li key={r.slug}><a href={`#ramo-${r.slug}`}>{r.title}</a></li>

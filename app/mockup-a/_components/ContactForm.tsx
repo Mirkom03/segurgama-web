@@ -30,7 +30,7 @@ export default function ContactForm({ ramos, telefono }: Props) {
       <div className="a-field">
         <label htmlFor="a-ramo">¿Qué quieres asegurar?</label>
         <select id="a-ramo" defaultValue="">
-          <option value="" disabled>Elige un ramo</option>
+          <option value="" disabled>Elige un seguro</option>
           {ramos.map((r) => (
             <option key={r.slug} value={r.slug} style={{ color: "#111" }}>
               {r.title}

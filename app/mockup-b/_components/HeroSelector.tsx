@@ -42,7 +42,7 @@ export default function HeroSelector({ ramos }: Props) {
           })}
         </div>
         <p style={{ fontSize: 13, color: "#555", margin: 0, lineHeight: 1.55, marginTop: "0.25rem" }}>
-          ¿Buscas una cobertura específica? Trabajamos con vehículos clásicos, drones, náutica, maquinaria, mascotas exóticas, RC deportiva, bodegas y otros ramos especializados. <a href="#ramos" style={{ color: "var(--b-blue-deep)", fontWeight: 600 }}>Ver todos →</a>
+          ¿Buscas una cobertura específica? Trabajamos con vehículos clásicos, drones, náutica, maquinaria, mascotas exóticas, RC deportiva, bodegas y otros seguros especializados. <a href="#ramos" style={{ color: "var(--b-blue-deep)", fontWeight: 600 }}>Ver todos los seguros →</a>
         </p>
       </div>
 

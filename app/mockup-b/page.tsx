@@ -42,7 +42,7 @@ export default function MockupBPage() {
           />
         </Link>
         <nav className="b-nav__links">
-          <a href="#ramos" className="b-nav__link">Ramos</a>
+          <a href="#ramos" className="b-nav__link">Seguros</a>
           <a href="#compara" className="b-nav__link">Humanos vs bots</a>
           <a href="#plan" className="b-nav__link">Cómo funciona</a>
           <a href="#faq" className="b-nav__link">FAQ</a>
@@ -67,7 +67,7 @@ export default function MockupBPage() {
                 La mejor póliza del mercado, <em>elegida por alguien humano.</em>
               </h1>
               <p className="b-hero__subtitle">
-                Elige ramo, deja tu móvil y un corredor titulado te llama en menos de 10 minutos con la comparativa de todas las aseguradoras, incluidos ramos especializados que otras compañías rechazan.
+                Elige el seguro, deja tu móvil y un corredor titulado te llama en menos de 10 minutos con la comparativa de todas las aseguradoras, incluidos seguros especializados que otras compañías rechazan.
               </p>
             </div>
 
@@ -106,7 +106,7 @@ export default function MockupBPage() {
                 <li><X size={16} strokeWidth={2.5} />Te derivan a una centralita donde el operador cambia en cada llamada</li>
                 <li><X size={16} strokeWidth={2.5} />Solo comparan precio base, no coberturas reales</li>
                 <li><X size={16} strokeWidth={2.5} />Si tienes un siniestro, te dejan solo ante la aseguradora</li>
-                <li><X size={16} strokeWidth={2.5} />No cubren ramos especializados (clásicos, náutica, agrícola, exóticos)</li>
+                <li><X size={16} strokeWidth={2.5} />No cubren seguros especializados (clásicos, náutica, agrícola, exóticos)</li>
                 <li><X size={16} strokeWidth={2.5} />Nadie te conoce ni recuerda tu historial</li>
               </ul>
             </article>
@@ -120,7 +120,7 @@ export default function MockupBPage() {
                 <li><Check size={16} strokeWidth={2.5} />Te atiende siempre la misma persona titulada DGSFP</li>
                 <li><Check size={16} strokeWidth={2.5} />Comparamos cobertura real, letra pequeña incluida</li>
                 <li><Check size={16} strokeWidth={2.5} />Gestionamos tu siniestro contigo, peleamos plazos</li>
-                <li><Check size={16} strokeWidth={2.5} />Cubrimos ramos especializados — 35 años de experiencia</li>
+                <li><Check size={16} strokeWidth={2.5} />Cubrimos seguros especializados — 35 años de experiencia</li>
                 <li><Check size={16} strokeWidth={2.5} />Conocemos tu historial completo de pólizas</li>
               </ul>
             </article>
@@ -133,11 +133,11 @@ export default function MockupBPage() {
         <div className="b-container">
           <div className="b-ramos__head">
             <div>
-              <span className="b-kicker">Ramos que cubrimos</span>
+              <span className="b-kicker">Seguros que cubrimos</span>
               <h2 className="b-heading b-ramos__title">Elige qué quieres asegurar.</h2>
             </div>
             <p className="b-ramos__sub">
-              Más de 20 ramos, desde coche y hogar hasta drones, bodegas y mascotas exóticas.
+              Más de 20 seguros, desde coche y hogar hasta drones, bodegas y mascotas exóticas.
               Si alguien lo cubre en España, lo encontramos nosotros.
             </p>
           </div>
@@ -344,7 +344,7 @@ export default function MockupBPage() {
                 Un corredor humano te llama <em>en menos de 10 minutos.</em>
               </h2>
               <p className="b-cta__sub">
-                Formulario corto, sin compromiso. Te llama un corredor titulado con la mejor póliza del mercado, también para ramos especializados.
+                Formulario corto, sin compromiso. Te llama un corredor titulado con la mejor póliza del mercado, también para seguros especializados.
               </p>
               <div style={{ marginTop: "1.75rem", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontSize: 13.5, color: "rgba(255,255,255,0.85)" }}>
@@ -392,7 +392,7 @@ export default function MockupBPage() {
               <span className="b-footer__dgsfp">DGSFP · Nº {empresa.dgsfpNumero}</span>
             </div>
             <div className="b-footer__col">
-              <h4>Ramos</h4>
+              <h4>Seguros</h4>
               <ul className="b-footer__links">
                 {ramos.slice(0, 7).map((r) => (
                   <li key={r.slug}><a href={`#ramo-${r.slug}`}>{r.title}</a></li>

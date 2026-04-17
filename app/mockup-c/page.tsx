@@ -30,7 +30,7 @@ export default function MockupCPage() {
           </Link>
           <nav className="c-nav__links">
             <a href="#inicio" className="c-nav__link c-nav__link--active">Inicio</a>
-            <a href="#ramos" className="c-nav__link">Ramos</a>
+            <a href="#ramos" className="c-nav__link">Seguros</a>
             <a href="#equipo" className="c-nav__link">Equipo</a>
             <a href="#testimonio" className="c-nav__link">Casos reales</a>
             <a href="#faq" className="c-nav__link">FAQ</a>
@@ -62,7 +62,7 @@ export default function MockupCPage() {
               </h1>
               <p className="c-hero__sub">
                 Comparamos entre todas las aseguradoras del mercado la mejor póliza para tu
-                caso, incluidos ramos especializados (vehículos clásicos, maquinaria agrícola, náutica, mascotas exóticas,
+                caso, incluidos seguros especializados (vehículos clásicos, maquinaria agrícola, náutica, mascotas exóticas,
                 RC deportiva). Cuando pase algo, no estarás solo.
               </p>
               <div className="c-hero__actions">
@@ -117,7 +117,7 @@ export default function MockupCPage() {
               </li>
               <li className="c-problem__num">03</li>
               <li className="c-problem__text">
-                <h3 className="c-problem__text-title">Los ramos especializados casi nadie los cubre.</h3>
+                <h3 className="c-problem__text-title">Los seguros especializados casi nadie los cubre.</h3>
                 <p className="c-problem__text-body">
                   Coche clásico, maquinaria agrícola, embarcación, mascota exótica, drone. Te rechazan o te suben la prima a lo imposible.
                 </p>
@@ -138,8 +138,8 @@ export default function MockupCPage() {
       <section className="c-ramos" id="ramos">
         <div className="c-container">
           <div className="c-ramos__head">
-            <span className="c-kicker">Todo lo que cubrimos</span>
-            <h2 className="c-heading c-ramos__title">Más de 20 ramos. Desde los más comunes hasta los más especializados.</h2>
+            <span className="c-kicker">Todos los seguros que ofrecemos</span>
+            <h2 className="c-heading c-ramos__title">Más de 20 seguros. Desde los más comunes hasta los más especializados.</h2>
             <p className="c-ramos__sub">
               Elige qué quieres asegurar y te traemos la mejor opción entre decenas de aseguradoras. Si alguien lo cubre en España, lo encontramos nosotros.
             </p>
@@ -369,7 +369,7 @@ export default function MockupCPage() {
               <span className="c-footer__dgsfp">DGSFP · Nº {empresa.dgsfpNumero}</span>
             </div>
             <div className="c-footer__col">
-              <h4>Ramos</h4>
+              <h4>Seguros</h4>
               <ul className="c-footer__links">
                 {ramos.slice(0, 7).map((r) => (
                   <li key={r.slug}><a href={`#ramo-${r.slug}`}>{r.title}</a></li>

@@ -45,8 +45,8 @@ export default function HeroSelector({ ramos }: Props) {
           })}
         </div>
         <p className="d-selector__extra">
-          ¿Buscas una cobertura específica? Trabajamos con vehículos clásicos, drones, náutica, maquinaria, mascotas exóticas, RC deportiva, bodegas y otros ramos especializados.{" "}
-          <a href="#ramos">Ver todos los ramos →</a>
+          ¿Buscas una cobertura específica? Trabajamos con vehículos clásicos, drones, náutica, maquinaria, mascotas exóticas, RC deportiva, bodegas y otros seguros especializados.{" "}
+          <a href="#ramos">Ver todos los seguros →</a>
         </p>
       </div>
 
