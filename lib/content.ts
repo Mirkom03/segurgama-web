@@ -193,7 +193,7 @@ export type TrustStat = { value: string; label: string };
 export const trustStats: TrustStat[] = [
   { value: "35+", label: "años de experiencia" },
   { value: "10.000+", label: "clientes en España [TBC]" },
-  { value: "20+", label: "seguros cubiertos" },
+  { value: "Todos", label: "los seguros del mercado" },
   { value: "100%", label: "empleados titulados DGSFP" },
   { value: "5", label: "idiomas: ES · EN · CA · VAL · GL" },
 ];

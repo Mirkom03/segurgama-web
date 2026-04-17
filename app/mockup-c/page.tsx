@@ -139,7 +139,7 @@ export default function MockupCPage() {
         <div className="c-container">
           <div className="c-ramos__head">
             <span className="c-kicker">Todos los seguros que ofrecemos</span>
-            <h2 className="c-heading c-ramos__title">Más de 20 seguros. Desde los más comunes hasta los más especializados.</h2>
+            <h2 className="c-heading c-ramos__title">Todos los seguros del mercado. Desde los más comunes hasta los más especializados.</h2>
             <p className="c-ramos__sub">
               Elige qué quieres asegurar y te traemos la mejor opción entre decenas de aseguradoras. Si alguien lo cubre en España, lo encontramos nosotros.
             </p>

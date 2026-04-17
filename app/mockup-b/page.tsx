@@ -137,7 +137,7 @@ export default function MockupBPage() {
               <h2 className="b-heading b-ramos__title">Elige qué quieres asegurar.</h2>
             </div>
             <p className="b-ramos__sub">
-              Más de 20 seguros, desde coche y hogar hasta drones, bodegas y mascotas exóticas.
+              Todos los seguros del mercado, desde coche y hogar hasta drones, bodegas y mascotas exóticas.
               Si alguien lo cubre en España, lo encontramos nosotros.
             </p>
           </div>

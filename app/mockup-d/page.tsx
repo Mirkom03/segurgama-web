@@ -117,8 +117,8 @@ export default function MockupDPage() {
                   <div className="d-hero__stat-l">aseguradoras</div>
                 </div>
                 <div className="d-hero__stat">
-                  <div className="d-hero__stat-v"><strong>20+</strong></div>
-                  <div className="d-hero__stat-l">ramos cubiertos</div>
+                  <div className="d-hero__stat-v"><strong>Todos</strong></div>
+                  <div className="d-hero__stat-l">los seguros del mercado</div>
                 </div>
                 <div className="d-hero__stat">
                   <div className="d-hero__stat-v"><strong>100%</strong></div>
@@ -279,7 +279,7 @@ export default function MockupDPage() {
               <h2 className="d-heading d-ramos__title">Elige qué quieres asegurar.</h2>
             </div>
             <p className="d-ramos__sub">
-              Más de 20 seguros, desde coche y hogar hasta bodegas, drones y mascotas exóticas. Si alguien lo cubre en España, lo encontramos nosotros.
+              Todos los seguros del mercado, desde coche y hogar hasta bodegas, drones y mascotas exóticas. Si alguien lo cubre en España, lo encontramos nosotros.
             </p>
           </div>
 
