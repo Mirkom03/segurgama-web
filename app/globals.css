@@ -10,6 +10,8 @@
   --font-geist-mono: "Geist Mono", ui-monospace, monospace;
   --font-general: "Plus Jakarta Sans", "General Sans", ui-sans-serif, system-ui, sans-serif;
   --font-fraunces: "Fraunces", ui-serif, Georgia, serif;
+  --font-space: "Space Grotesk", ui-sans-serif, system-ui, sans-serif;
+  --font-space-mono: "Space Mono", ui-monospace, monospace;
 
   /* Easings — NO linear/ease/ease-in/ease-out por defecto (rule 11) */
   --ease-expo: cubic-bezier(0.16, 1, 0.3, 1);
@@ -55,6 +57,27 @@
   --c-olive: #7A8450;
   --c-bone: #FAF6EE;
   --c-ink: #0F1318;
+}
+
+/* === MOCKUP D — Derivado del logo Segurgama === */
+[data-mockup="d"] {
+  --d-navy: #0E2A56;
+  --d-navy-deep: #071932;
+  --d-navy-ink: #0A1E3F;
+  --d-lima: #9DB918;
+  --d-lima-deep: #7A9110;
+  --d-yellow: #DCEB3A;
+  --d-yellow-soft: #E7F276;
+  --d-cream: #FAF9F2;
+  --d-cream-warm: #F3F1E4;
+  --d-bone: #FFFFFF;
+  --d-ink: #0A1220;
+  --d-line: rgba(14, 42, 86, 0.12);
+}
+
+[data-mockup="d"] ::selection {
+  background: var(--d-yellow);
+  color: var(--d-navy);
 }
 
 /* === Reset focus ring global (override per mockup) === */

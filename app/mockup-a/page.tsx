@@ -74,9 +74,14 @@ export default function MockupAPage() {
       {/* =============== 1. NAV =============== */}
       <header className="a-nav">
         <div className="a-container a-nav__inner">
-          <Link href="#inicio" className="a-nav__brand">
-            <span className="a-nav__brand-dot" />
-            Segurgama<span style={{ color: "var(--a-amber-deep)", fontWeight: 500 }}>.</span>
+          <Link href="#inicio" className="a-nav__brand" aria-label="Segurgama Correduría de Seguros — Inicio">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.png"
+              alt="Segurgama Correduría de Seguros"
+              height={40}
+              style={{ height: 40, width: "auto", display: "block" }}
+            />
           </Link>
           <nav className="a-nav__links">
             <a href="#ramos" className="a-nav__link">Ramos</a>
@@ -516,19 +521,26 @@ export default function MockupAPage() {
         <div className="a-container">
           <div className="a-footer__grid">
             <div className="a-footer__brand">
-              <span className="a-footer__logo">
-                <span
-                  style={{
-                    width: 10,
-                    height: 10,
-                    borderRadius: "50%",
-                    background: "var(--a-amber)",
-                    display: "inline-block",
-                  }}
+              <span
+                className="a-footer__logo-pill"
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  background: "var(--a-cream)",
+                  padding: "0.7rem 1rem",
+                  borderRadius: 8,
+                  width: "fit-content",
+                }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/logo.png"
+                  alt="Segurgama Correduría de Seguros"
+                  height={34}
+                  style={{ height: 34, width: "auto", display: "block" }}
                 />
-                Segurgama
               </span>
-              <p className="a-footer__desc">
+              <p className="a-footer__desc" style={{ marginTop: "1rem" }}>
                 Correduría de seguros nacional con {empresa.años} años. Elegimos por ti entre todas las aseguradoras del mercado la póliza que mejor te encaje — con asesoramiento humano titulado.
               </p>
               <span className="a-footer__dgsfp">

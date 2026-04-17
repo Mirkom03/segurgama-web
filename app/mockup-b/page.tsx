@@ -32,9 +32,14 @@ export default function MockupBPage() {
     <>
       {/* =============== 1. NAV PILL FLOTANTE =============== */}
       <header className="b-nav">
-        <Link href="#inicio" className="b-nav__brand">
-          <span className="b-nav__brand-mark">S</span>
-          Segurgama
+        <Link href="#inicio" className="b-nav__brand" aria-label="Segurgama Correduría de Seguros — Inicio">
+          {/* eslint-disable-next-line @next/next/no-img-element */}
+          <img
+            src="/logo.png"
+            alt="Segurgama Correduría de Seguros"
+            height={38}
+            style={{ height: 38, width: "auto", display: "block" }}
+          />
         </Link>
         <nav className="b-nav__links">
           <a href="#ramos" className="b-nav__link">Ramos</a>
@@ -364,17 +369,25 @@ export default function MockupBPage() {
         <div className="b-container">
           <div className="b-footer__grid">
             <div>
-              <span className="b-footer__logo">
-                <span
-                  style={{
-                    width: 28, height: 28, borderRadius: 8,
-                    background: "linear-gradient(135deg, var(--b-blue) 0%, var(--b-green) 100%)",
-                    display: "grid", placeItems: "center", fontSize: 13, fontWeight: 700,
-                  }}
-                >S</span>
-                Segurgama
+              <span
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  background: "#FFFFFF",
+                  padding: "0.7rem 1rem",
+                  borderRadius: 12,
+                  width: "fit-content",
+                }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/logo.png"
+                  alt="Segurgama Correduría de Seguros"
+                  height={32}
+                  style={{ height: 32, width: "auto", display: "block" }}
+                />
               </span>
-              <p className="b-footer__desc">
+              <p className="b-footer__desc" style={{ marginTop: "1rem" }}>
                 Correduría de seguros nacional con {empresa.años} años. Elegimos por ti entre todas las aseguradoras del mercado — con asesoramiento humano titulado.
               </p>
               <span className="b-footer__dgsfp">DGSFP · Nº {empresa.dgsfpNumero}</span>

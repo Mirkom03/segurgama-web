@@ -28,6 +28,15 @@ const mockups = [
     summary:
       "Humano mediterráneo profesional: editorial sobrio con calidez, sin italic. Signature: número '35' oversize editorial + testimonio cita ancho completo.",
   },
+  {
+    id: "d",
+    name: "Derivado del logo",
+    palette: "Navy + Lima + Amarillo + Cream (desde el logo cliente)",
+    type: "Space Grotesk · Inter · Space Mono",
+    anchor: "Brand del cliente (paleta + sensibilidad del globo)",
+    summary:
+      "Identidad nacida del logo actual: evoca el globo con órbitas de aseguradoras alrededor del corredor. Humanist geometric, status bar navy arriba, CTAs lima+amarillo. Signature: hero orbital + oversize '35' gradient lima→amarillo.",
+  },
 ];
 
 export default function IndexPage() {
@@ -75,9 +84,9 @@ export default function IndexPage() {
               lineHeight: 1.55,
             }}
           >
-            Tres direcciones opuestas dentro del eyebrow sectorial (correduría
-            nacional, humana, titulada). Mismo mensaje, misma arquitectura, tres
-            pieles. Cada dirección puede descartarse independientemente.
+            Cuatro direcciones opuestas dentro del eyebrow sectorial (correduría
+            nacional, humana, titulada). Mismo mensaje, misma arquitectura, cuatro
+            pieles. A/B/C parten de refs sectoriales; D parte del logo actual del cliente.
           </p>
         </div>
 

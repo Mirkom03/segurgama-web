@@ -19,9 +19,14 @@ export default function MockupCPage() {
       {/* =============== 1. NAV =============== */}
       <header className="c-nav">
         <div className="c-container c-nav__inner">
-          <Link href="#inicio" className="c-nav__brand">
-            <span className="c-nav__brand-line" />
-            Segurgama
+          <Link href="#inicio" className="c-nav__brand" aria-label="Segurgama Correduría de Seguros — Inicio">
+            {/* eslint-disable-next-line @next/next/no-img-element */}
+            <img
+              src="/logo.png"
+              alt="Segurgama Correduría de Seguros"
+              height={40}
+              style={{ height: 40, width: "auto", display: "block" }}
+            />
           </Link>
           <nav className="c-nav__links">
             <a href="#inicio" className="c-nav__link c-nav__link--active">Inicio</a>
@@ -340,11 +345,25 @@ export default function MockupCPage() {
         <div className="c-container">
           <div className="c-footer__grid">
             <div>
-              <span className="c-footer__logo">
-                <span style={{ width: 24, height: 2, background: "var(--c-teja)", display: "inline-block" }} />
-                Segurgama
+              <span
+                style={{
+                  display: "inline-flex",
+                  alignItems: "center",
+                  background: "var(--c-cream)",
+                  padding: "0.7rem 1rem",
+                  borderRadius: 4,
+                  width: "fit-content",
+                }}
+              >
+                {/* eslint-disable-next-line @next/next/no-img-element */}
+                <img
+                  src="/logo.png"
+                  alt="Segurgama Correduría de Seguros"
+                  height={34}
+                  style={{ height: 34, width: "auto", display: "block" }}
+                />
               </span>
-              <p className="c-footer__desc">
+              <p className="c-footer__desc" style={{ marginTop: "1rem" }}>
                 Correduría de seguros nacional con {empresa.años} años. Elegimos por ti entre todas las aseguradoras del mercado la póliza que mejor te encaje — con asesoramiento humano titulado.
               </p>
               <span className="c-footer__dgsfp">DGSFP · Nº {empresa.dgsfpNumero}</span>
