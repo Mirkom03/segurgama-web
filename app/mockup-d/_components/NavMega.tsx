@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useRef, useState } from "react";
 import {
   Car, Home as HomeIcon, HeartPulse, Shield, Dog, Briefcase,
   Building2, Tractor, Ship, HardHat, UtensilsCrossed, Sparkles,
@@ -29,6 +29,7 @@ type Props = { ramos: Ramo[]; telefono: string };
 export default function NavMega({ ramos, telefono }: Props) {
   const [megaOpen, setMegaOpen] = useState(false);
   const [drawerOpen, setDrawerOpen] = useState(false);
+  const closeTimerRef = useRef<ReturnType<typeof setTimeout> | null>(null);
 
   const grouped: Record<GroupKey, Ramo[]> = {
     particular: ramos.filter((r) => r.group === "particular"),
@@ -37,7 +38,24 @@ export default function NavMega({ ramos, telefono }: Props) {
     especial: ramos.filter((r) => r.group === "especial"),
   };
 
+  const openMega = () => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
+    setMegaOpen(true);
+  };
+
+  const scheduleClose = () => {
+    if (closeTimerRef.current) clearTimeout(closeTimerRef.current);
+    closeTimerRef.current = setTimeout(() => setMegaOpen(false), 180);
+  };
+
   const closeAll = () => {
+    if (closeTimerRef.current) {
+      clearTimeout(closeTimerRef.current);
+      closeTimerRef.current = null;
+    }
     setMegaOpen(false);
     setDrawerOpen(false);
   };
@@ -47,8 +65,8 @@ export default function NavMega({ ramos, telefono }: Props) {
       <nav className="d-nav__links">
         <div
           className="d-mega__wrap"
-          onMouseEnter={() => setMegaOpen(true)}
-          onMouseLeave={() => setMegaOpen(false)}
+          onMouseEnter={openMega}
+          onMouseLeave={scheduleClose}
         >
           <button
             type="button"
@@ -84,8 +102,8 @@ export default function NavMega({ ramos, telefono }: Props) {
       {/* Mega-menu panel desktop */}
       <div
         className={`d-mega__panel ${megaOpen ? "d-mega__panel--open" : ""}`}
-        onMouseEnter={() => setMegaOpen(true)}
-        onMouseLeave={() => setMegaOpen(false)}
+        onMouseEnter={openMega}
+        onMouseLeave={scheduleClose}
       >
         <div className="d-container d-mega__inner">
           <div className="d-mega__grid">

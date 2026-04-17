@@ -1803,6 +1803,18 @@
   pointer-events: none;
 }
 
+/* Bridge invisible que cubre el gap entre el trigger del nav y el panel,
+   evita que el hover se pierda al mover el cursor hacia las opciones */
+.d-mega__panel::before {
+  content: "";
+  position: absolute;
+  top: -20px;
+  left: 0;
+  right: 0;
+  height: 20px;
+  background: transparent;
+}
+
 .d-mega__panel--open {
   opacity: 1;
   visibility: visible;
