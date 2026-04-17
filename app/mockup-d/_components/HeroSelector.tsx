@@ -45,7 +45,7 @@ export default function HeroSelector({ ramos }: Props) {
           })}
         </div>
         <p className="d-selector__extra">
-          ¿Algo más raro? Cubrimos clásicos, drones, náutica, maquinaria, mascotas exóticas, RC deportiva, bodegas y más.{" "}
+          ¿Buscas una cobertura específica? Trabajamos con vehículos clásicos, drones, náutica, maquinaria, mascotas exóticas, RC deportiva, bodegas y otros ramos especializados.{" "}
           <a href="#ramos">Ver todos los ramos →</a>
         </p>
       </div>
@@ -74,7 +74,7 @@ export default function HeroSelector({ ramos }: Props) {
           <ArrowRight size={15} strokeWidth={2.5} />
         </button>
         <p className="d-selector__note">
-          Te llama un corredor titulado DGSFP. Sin centrales. Sin IVR.
+          Te llama un corredor titulado DGSFP. Sin centralitas. Sin menús automáticos.
         </p>
       </form>
     </div>

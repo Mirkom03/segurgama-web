@@ -107,10 +107,10 @@ export const ramos: Ramo[] = [
   {
     slug: "otros",
     group: "especial",
-    title: "¿Tienes algo raro? Pregúntanos",
-    blurb: "Drones, eventos, mascotas exóticas, colecciones, bodegas, viñedos, galerías.",
-    highlights: ["Cubrimos lo que nadie cubre", "Nichos especiales", "Trato personal"],
-    cta: "Cuéntanos tu caso",
+    title: "Ramos especializados",
+    blurb: "Drones, eventos, embarcaciones de recreo, colecciones, bodegas, viñedos, galerías, perfiles atípicos.",
+    highlights: ["Cobertura en ramos especializados", "Riesgos específicos", "Asesoramiento personalizado"],
+    cta: "Solicitar asesoramiento",
   },
 ];
 
@@ -126,12 +126,12 @@ export const faqs: Faq[] = [
     a: "Al contrario. Cobramos una comisión a la aseguradora, no a ti. Al comparar entre decenas de compañías solemos conseguir primas más bajas que yendo directo. Y si surge un siniestro, te acompañamos sin coste.",
   },
   {
-    q: "¿Quién me atiende? ¿Son personas o un bot?",
-    a: "Personas. Todos nuestros empleados tienen titulación oficial en seguros (obligatorio por la DGSFP para asesorar). Tienes un corredor asignado con nombre y teléfono directo — no una central de llamadas rotativa.",
+    q: "¿Quién me atiende? ¿Son personas o un sistema automático?",
+    a: "Personas. Todos nuestros empleados tienen titulación oficial en seguros (requisito DGSFP para poder asesorar). Tendrás un corredor asignado con nombre y teléfono directo, no una centralita donde el operador cambia en cada llamada.",
   },
   {
-    q: "Tengo un coche clásico / maquinaria agrícola / barco / mascota exótica. ¿Lo cubrís?",
-    a: "Sí. Llevamos 35 años buscando coberturas para casos raros donde las aseguradoras directas no entran: clásicos, veteranos, maquinaria agrícola, embarcaciones, reptiles, aves rapaces, bodegas, drones, eventos... Si alguien lo cubre en España, lo encontramos nosotros.",
+    q: "Tengo un coche clásico, maquinaria agrícola, barco o mascota exótica. ¿Lo cubrís?",
+    a: "Sí. Llevamos 35 años trabajando con ramos especializados que las aseguradoras directas suelen rechazar: vehículos clásicos, maquinaria agrícola, embarcaciones de recreo, reptiles, aves rapaces, bodegas, drones, eventos y otros nichos. Si existe una aseguradora en España que lo cubra, la encontramos.",
   },
   {
     q: "¿Qué pasa si tengo un siniestro?",
@@ -225,7 +225,7 @@ export const planSteps: PlanStep[] = [
     step: "01",
     title: "Cuéntanos qué quieres asegurar",
     description:
-      "Elige ramo y rellena un form corto (2 min). Si es algo raro, llámanos directamente.",
+      "Elige ramo y rellena el formulario corto (2 minutos). Si es una cobertura específica o un ramo especializado, llámanos directamente.",
   },
   {
     step: "02",
@@ -249,23 +249,23 @@ export type Diferenciador = {
 
 export const diferenciadores: Diferenciador[] = [
   {
-    title: "Humanos titulados, no bots",
-    body: "Todos los empleados tienen titulación oficial en seguros (obligatorio DGSFP). No atiende un chatbot que te pasa a cola.",
+    title: "Asesoramiento humano y titulado",
+    body: "Todos nuestros empleados cuentan con titulación oficial en seguros (requisito DGSFP). No te atiende un sistema automático ni un operador distinto cada vez.",
     icon: "UserCheck",
   },
   {
-    title: "Lo mejor del mercado, no una sola marca",
-    body: "No vendemos UN seguro. Elegimos entre decenas de aseguradoras la póliza que más te cubre al mejor precio.",
+    title: "Comparamos todo el mercado",
+    body: "No vendemos una sola marca. Analizamos decenas de aseguradoras y elegimos la póliza con mejor cobertura al mejor precio para tu caso.",
     icon: "Scale",
   },
   {
-    title: "Sí, también cubrimos eso",
-    body: "Clásico, agrícola, náutico, RC deportiva, mascota exótica, maquinaria industrial. Lo que nadie cubre, nosotros sí.",
+    title: "Especialistas en ramos difíciles",
+    body: "Vehículos clásicos, maquinaria agrícola, embarcaciones, RC deportiva, mascotas exóticas, maquinaria industrial. Coberturas específicas que las grandes aseguradoras suelen rechazar.",
     icon: "Sparkles",
   },
   {
-    title: "Te acompañamos cuando pasa algo",
-    body: "Tu corredor gestiona el siniestro contigo. Plazos, partes, peritajes, defensa. No peleas solo contra la aseguradora.",
+    title: "Te acompañamos en el siniestro",
+    body: "Tu corredor abre el parte, sigue el expediente, vigila plazos y pelea la indemnización contigo. No gestionas la burocracia en solitario.",
     icon: "ShieldCheck",
   },
 ];

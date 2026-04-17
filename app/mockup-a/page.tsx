@@ -111,7 +111,7 @@ export default function MockupAPage() {
                 Un corredor humano. <em>Todas las aseguradoras.</em>
               </h1>
               <p className="a-hero__subtitle">
-                Somos corredores titulados con 35 años comparando el mercado. En 24h te traemos la mejor póliza para tu caso — incluidos los raros que nadie quiere cubrir.
+                Somos corredores titulados con 35 años comparando el mercado. En 24 horas te traemos la mejor póliza para tu caso, incluidos los ramos especializados que otras aseguradoras rechazan.
               </p>
 
               <div className="a-hero__chips">
@@ -154,7 +154,7 @@ export default function MockupAPage() {
               </a>
               <p className="a-hero__card-hours">
                 Coordinador directo: <strong style={{ color: "var(--a-bone)" }}>Marta Delgado</strong>.
-                Sin centrales ni IVR. Respuesta humana en menos de 2 min.
+                Sin centrales ni menús automáticos. Respuesta humana en menos de 2 minutos.
               </p>
 
               <div className="a-hero__card-divider" />
@@ -242,9 +242,9 @@ export default function MockupAPage() {
                   <FileWarning size={18} strokeWidth={2} />
                 </div>
                 <div>
-                  <h3 className="a-problem__item-title">Lo raro no lo cubre casi nadie</h3>
+                  <h3 className="a-problem__item-title">Las grandes aseguradoras rechazan los ramos especializados</h3>
                   <p className="a-problem__item-body">
-                    Coche clásico, barco, maquinaria agrícola, mascota exótica, drone, RC deportiva. Las grandes aseguradoras te rechazan o te suben la prima.
+                    Coche clásico, embarcación, maquinaria agrícola, mascota exótica, dron, RC deportiva. Las compañías directas las rechazan o aplican primas desproporcionadas.
                   </p>
                 </div>
               </li>

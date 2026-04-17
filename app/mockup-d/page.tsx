@@ -104,7 +104,7 @@ export default function MockupDPage() {
                 Decenas de aseguradoras. <em>Un corredor humano.</em>
               </h1>
               <p className="d-hero__sub">
-                Desde 1990 orquestamos la mejor póliza del mercado para ti — incluso para casos raros (clásicos, agro, náutica, mascotas exóticas). Sin bots ni call centers.
+                Desde 1990 buscamos la mejor póliza del mercado para ti, incluidos los ramos especializados (vehículos clásicos, maquinaria agrícola, náutica, mascotas exóticas). Sin sistemas automáticos ni centralitas impersonales.
               </p>
               <div className="d-hero__cta">
                 <a href="#cotiza" className="d-btn d-btn--primary">
@@ -193,7 +193,7 @@ export default function MockupDPage() {
               Los bots no saben tu caso. <em>Nosotros sí.</em>
             </h2>
             <p className="d-compare__sub">
-              Un comparador online rellena un form y te pasa a call center rotativo. Segurgama es un corredor humano DGSFP que te acompaña durante toda la vida de la póliza.
+              Un comparador online rellena un formulario y te deriva a una centralita donde el operador cambia a cada llamada. Segurgama es un corredor humano titulado DGSFP que te acompaña durante toda la vida de la póliza.
             </p>
           </div>
 
@@ -202,10 +202,10 @@ export default function MockupDPage() {
               <span className="d-compare__col-tag">Comparador online</span>
               <h3 className="d-compare__col-title">Un bot que te hace preguntas</h3>
               <ul className="d-compare__list">
-                <li><X size={15} strokeWidth={2.5} />Te pasan a un call center rotativo sin memoria</li>
-                <li><X size={15} strokeWidth={2.5} />Solo comparan precio base — no coberturas reales</li>
+                <li><X size={15} strokeWidth={2.5} />Te derivan a una centralita sin memoria: operador distinto cada llamada</li>
+                <li><X size={15} strokeWidth={2.5} />Solo comparan precio base, no coberturas reales</li>
                 <li><X size={15} strokeWidth={2.5} />Si tienes un siniestro, te dejan solo ante la aseguradora</li>
-                <li><X size={15} strokeWidth={2.5} />No cubren casos raros: clásicos, náutica, agro, exóticos</li>
+                <li><X size={15} strokeWidth={2.5} />No cubren ramos especializados: clásicos, náutica, agrícola, exóticos</li>
                 <li><X size={15} strokeWidth={2.5} />Nadie recuerda tu historial cuando renuevas</li>
               </ul>
             </article>
@@ -219,7 +219,7 @@ export default function MockupDPage() {
                 <li><Check size={15} strokeWidth={2.5} />Te atiende siempre la misma persona titulada DGSFP</li>
                 <li><Check size={15} strokeWidth={2.5} />Comparamos cobertura real con letra pequeña traducida</li>
                 <li><Check size={15} strokeWidth={2.5} />Gestionamos tu siniestro y peleamos plazos por ti</li>
-                <li><Check size={15} strokeWidth={2.5} />Cubrimos nichos raros — 35 años buscando pólizas</li>
+                <li><Check size={15} strokeWidth={2.5} />Cubrimos ramos especializados — 35 años buscando pólizas</li>
                 <li><Check size={15} strokeWidth={2.5} />Conocemos tu historial entero cuando toca renovar</li>
               </ul>
             </article>
@@ -252,7 +252,7 @@ export default function MockupDPage() {
                 <div>
                   <h3 className="d-problem__item-title">Los comparadores te pasan a call center</h3>
                   <p className="d-problem__item-body">
-                    Rellenas 40 campos en un form y acabas en una central rotativa sin criterio ni memoria de tu caso.
+                    Rellenas 40 campos en un formulario y acabas en una centralita donde el operador cambia cada llamada, sin criterio ni memoria de tu caso.
                   </p>
                 </div>
               </li>
@@ -268,9 +268,9 @@ export default function MockupDPage() {
               <li className="d-problem__item">
                 <span className="d-problem__item-num">04</span>
                 <div>
-                  <h3 className="d-problem__item-title">Lo raro no lo cubre casi nadie</h3>
+                  <h3 className="d-problem__item-title">Los ramos especializados casi nadie los cubre</h3>
                   <p className="d-problem__item-body">
-                    Coche clásico, maquinaria agrícola, embarcación, mascota exótica, drone. Te rechazan o te suben la prima.
+                    Vehículo clásico, maquinaria agrícola, embarcación, mascota exótica, dron. Las grandes compañías los rechazan o aplican primas desproporcionadas.
                   </p>
                 </div>
               </li>
@@ -473,7 +473,7 @@ export default function MockupDPage() {
                 Un corredor humano te llama <em>en menos de 10 minutos.</em>
               </h2>
               <p className="d-cta__sub">
-                Form corto (2 min). Te llama un corredor titulado con la mejor póliza del mercado — y si es algo raro, también.
+                Formulario corto (2 minutos). Te llama un corredor titulado con la mejor póliza del mercado, también para ramos especializados.
               </p>
               <a
                 href={`tel:${empresa.telefono.replace(/\s/g, "")}`}

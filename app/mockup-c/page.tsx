@@ -62,7 +62,7 @@ export default function MockupCPage() {
               </h1>
               <p className="c-hero__sub">
                 Comparamos entre todas las aseguradoras del mercado la mejor póliza para tu
-                caso — incluso para lo raro (clásicos, agrícola, náutica, mascotas exóticas,
+                caso, incluidos ramos especializados (vehículos clásicos, maquinaria agrícola, náutica, mascotas exóticas,
                 RC deportiva). Cuando pase algo, no estarás solo.
               </p>
               <div className="c-hero__actions">
@@ -112,12 +112,12 @@ export default function MockupCPage() {
               <li className="c-problem__text">
                 <h3 className="c-problem__text-title">Los comparadores son bots.</h3>
                 <p className="c-problem__text-body">
-                  Rellenas 40 campos y acabas en un call center rotativo. Sin criterio, sin acompañamiento, sin nadie que recuerde tu caso.
+                  Rellenas 40 campos y acabas en una centralita donde el operador cambia en cada llamada. Sin criterio, sin acompañamiento, sin nadie que recuerde tu caso.
                 </p>
               </li>
               <li className="c-problem__num">03</li>
               <li className="c-problem__text">
-                <h3 className="c-problem__text-title">Lo raro no lo cubre casi nadie.</h3>
+                <h3 className="c-problem__text-title">Los ramos especializados casi nadie los cubre.</h3>
                 <p className="c-problem__text-body">
                   Coche clásico, maquinaria agrícola, embarcación, mascota exótica, drone. Te rechazan o te suben la prima a lo imposible.
                 </p>
@@ -139,7 +139,7 @@ export default function MockupCPage() {
         <div className="c-container">
           <div className="c-ramos__head">
             <span className="c-kicker">Todo lo que cubrimos</span>
-            <h2 className="c-heading c-ramos__title">Más de 20 ramos. Desde lo común hasta lo raro.</h2>
+            <h2 className="c-heading c-ramos__title">Más de 20 ramos. Desde los más comunes hasta los más especializados.</h2>
             <p className="c-ramos__sub">
               Elige qué quieres asegurar y te traemos la mejor opción entre decenas de aseguradoras. Si alguien lo cubre en España, lo encontramos nosotros.
             </p>

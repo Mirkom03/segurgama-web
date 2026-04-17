@@ -67,7 +67,7 @@ export default function MockupBPage() {
                 La mejor póliza del mercado, <em>elegida por alguien humano.</em>
               </h1>
               <p className="b-hero__subtitle">
-                Elige ramo, deja tu móvil y un corredor titulado te llama en menos de 10 minutos con la comparativa de todas las aseguradoras — incluso para casos raros que nadie cubre.
+                Elige ramo, deja tu móvil y un corredor titulado te llama en menos de 10 minutos con la comparativa de todas las aseguradoras, incluidos ramos especializados que otras compañías rechazan.
               </p>
             </div>
 
@@ -94,8 +94,7 @@ export default function MockupBPage() {
               Los bots no saben tu caso. Nosotros sí.
             </h2>
             <p style={{ fontSize: 15, color: "#555", maxWidth: "52ch", lineHeight: 1.55, margin: "0.5rem 0 0" }}>
-              Un comparador online rellena un formulario y te pasa a un call center rotativo.
-              Segurgama es un corredor humano titulado DGSFP que te lleva durante toda la vida de la póliza.
+              Un comparador online rellena un formulario y te deriva a una centralita donde el operador cambia a cada llamada. Segurgama es un corredor humano titulado DGSFP que te acompaña durante toda la vida de la póliza.
             </p>
           </div>
 
@@ -104,10 +103,10 @@ export default function MockupBPage() {
               <span className="b-compare__col-tag">Comparador online</span>
               <h3 className="b-compare__col-title">Un bot que te hace preguntas</h3>
               <ul className="b-compare__list">
-                <li><X size={16} strokeWidth={2.5} />Te pasan a un call center rotativo</li>
+                <li><X size={16} strokeWidth={2.5} />Te derivan a una centralita donde el operador cambia en cada llamada</li>
                 <li><X size={16} strokeWidth={2.5} />Solo comparan precio base, no coberturas reales</li>
-                <li><X size={16} strokeWidth={2.5} />Si tienes un siniestro, te dejan solo con la aseguradora</li>
-                <li><X size={16} strokeWidth={2.5} />No cubren casos raros (clásicos, náutica, agro, exóticos)</li>
+                <li><X size={16} strokeWidth={2.5} />Si tienes un siniestro, te dejan solo ante la aseguradora</li>
+                <li><X size={16} strokeWidth={2.5} />No cubren ramos especializados (clásicos, náutica, agrícola, exóticos)</li>
                 <li><X size={16} strokeWidth={2.5} />Nadie te conoce ni recuerda tu historial</li>
               </ul>
             </article>
@@ -121,7 +120,7 @@ export default function MockupBPage() {
                 <li><Check size={16} strokeWidth={2.5} />Te atiende siempre la misma persona titulada DGSFP</li>
                 <li><Check size={16} strokeWidth={2.5} />Comparamos cobertura real, letra pequeña incluida</li>
                 <li><Check size={16} strokeWidth={2.5} />Gestionamos tu siniestro contigo, peleamos plazos</li>
-                <li><Check size={16} strokeWidth={2.5} />Cubrimos nichos raros — 35 años de experiencia</li>
+                <li><Check size={16} strokeWidth={2.5} />Cubrimos ramos especializados — 35 años de experiencia</li>
                 <li><Check size={16} strokeWidth={2.5} />Conocemos tu historial completo de pólizas</li>
               </ul>
             </article>
@@ -345,7 +344,7 @@ export default function MockupBPage() {
                 Un corredor humano te llama <em>en menos de 10 minutos.</em>
               </h2>
               <p className="b-cta__sub">
-                Form corto, sin compromiso. Te llama un corredor titulado con la mejor póliza del mercado — y si es algo raro, también.
+                Formulario corto, sin compromiso. Te llama un corredor titulado con la mejor póliza del mercado, también para ramos especializados.
               </p>
               <div style={{ marginTop: "1.75rem", display: "flex", gap: "1rem", flexWrap: "wrap" }}>
                 <div style={{ display: "flex", alignItems: "center", gap: "0.5rem", fontSize: 13.5, color: "rgba(255,255,255,0.85)" }}>
