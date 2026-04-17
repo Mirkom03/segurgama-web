@@ -2,12 +2,13 @@ import Link from "next/link";
 import {
   Phone, Car, Home as HomeIcon, HeartPulse, Shield, Dog, Briefcase, Building2,
   Tractor, Ship, HardHat, UtensilsCrossed, Sparkles, ArrowUpRight, ArrowRight,
-  UserCheck, Scale, ShieldCheck, Star, Plus, User, MessageCircle,
+  UserCheck, ShieldCheck, Star, Plus, User, MessageCircle, Check, X,
 } from "lucide-react";
 import {
   ramos, faqs, testimonials, aseguradorasColaboradoras,
-  planSteps, diferenciadores, empresa, type Ramo,
+  planSteps, empresa, type Ramo,
 } from "@/lib/content";
+import HeroSelector from "./_components/HeroSelector";
 import CtaForm from "./_components/CtaForm";
 import "./mockup-d.css";
 
@@ -16,10 +17,6 @@ const ramoIcons: Record<string, React.ComponentType<{ size?: number; strokeWidth
   mascotas: Dog, "rc-profesional": Briefcase, "empresa-pyme": Building2,
   "agro-maquinaria": Tractor, nautico: Ship, construccion: HardHat,
   hosteleria: UtensilsCrossed, otros: Sparkles,
-};
-
-const pillarIcons: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number }>> = {
-  UserCheck, Scale, Sparkles, ShieldCheck,
 };
 
 // Órbita aseguradoras: posiciones fijas en distintos ángulos y radios
@@ -85,7 +82,7 @@ export default function MockupDPage() {
           </Link>
           <nav className="d-nav__links">
             <a href="#ramos" className="d-nav__link">Ramos</a>
-            <a href="#diferenciador" className="d-nav__link">Por qué nosotros</a>
+            <a href="#humanos-vs-bots" className="d-nav__link">Humanos vs bots</a>
             <a href="#plan" className="d-nav__link">Cómo funciona</a>
             <a href="#equipo" className="d-nav__link">Equipo</a>
             <a href="#faq" className="d-nav__link">FAQ</a>
@@ -114,8 +111,8 @@ export default function MockupDPage() {
                   Cotizar mi seguro
                   <ArrowRight size={15} strokeWidth={2.5} />
                 </a>
-                <a href="#diferenciador" className="d-btn d-btn--ghost">
-                  Cómo trabajamos
+                <a href="#humanos-vs-bots" className="d-btn d-btn--ghost">
+                  Humanos vs bots
                 </a>
               </div>
 
@@ -165,6 +162,67 @@ export default function MockupDPage() {
                 </span>
               </div>
             </div>
+          </div>
+        </div>
+      </section>
+
+      {/* =============== 2.5. SELECTOR PRESUPUESTO =============== */}
+      <section className="d-selector" id="cotiza-rapido">
+        <div className="d-container">
+          <div className="d-selector__head">
+            <span className="d-kicker">Cotiza en 2 minutos</span>
+            <h2 className="d-heading d-selector__title">
+              Elige ramo, deja tu móvil — <em>te llamamos en menos de 10 min.</em>
+            </h2>
+            <p className="d-selector__sub">
+              Sin formularios de 40 campos. Un corredor humano titulado se conecta con la aseguradora correcta y te trae la mejor póliza del mercado en 24h.
+            </p>
+          </div>
+          <HeroSelector ramos={ramos} />
+        </div>
+      </section>
+
+      {/* =============== 2.6. HUMANO VS BOT (propuesta de valor) =============== */}
+      <section className="d-compare" id="humanos-vs-bots">
+        <div className="d-container">
+          <div className="d-compare__head">
+            <span className="d-kicker" style={{ marginInline: "auto" }}>
+              La diferencia real
+            </span>
+            <h2 className="d-heading d-compare__title">
+              Los bots no saben tu caso. <em>Nosotros sí.</em>
+            </h2>
+            <p className="d-compare__sub">
+              Un comparador online rellena un form y te pasa a call center rotativo. Segurgama es un corredor humano DGSFP que te acompaña durante toda la vida de la póliza.
+            </p>
+          </div>
+
+          <div className="d-compare__grid">
+            <article className="d-compare__col d-compare__col--bot">
+              <span className="d-compare__col-tag">Comparador online</span>
+              <h3 className="d-compare__col-title">Un bot que te hace preguntas</h3>
+              <ul className="d-compare__list">
+                <li><X size={15} strokeWidth={2.5} />Te pasan a un call center rotativo sin memoria</li>
+                <li><X size={15} strokeWidth={2.5} />Solo comparan precio base — no coberturas reales</li>
+                <li><X size={15} strokeWidth={2.5} />Si tienes un siniestro, te dejan solo ante la aseguradora</li>
+                <li><X size={15} strokeWidth={2.5} />No cubren casos raros: clásicos, náutica, agro, exóticos</li>
+                <li><X size={15} strokeWidth={2.5} />Nadie recuerda tu historial cuando renuevas</li>
+              </ul>
+            </article>
+
+            <span className="d-compare__vs" aria-hidden="true">vs</span>
+
+            <article className="d-compare__col d-compare__col--human">
+              <span className="d-compare__col-tag">Segurgama</span>
+              <h3 className="d-compare__col-title">Un corredor humano con nombre</h3>
+              <ul className="d-compare__list">
+                <li><Check size={15} strokeWidth={2.5} />Te atiende siempre la misma persona titulada DGSFP</li>
+                <li><Check size={15} strokeWidth={2.5} />Comparamos cobertura real con letra pequeña traducida</li>
+                <li><Check size={15} strokeWidth={2.5} />Gestionamos tu siniestro y peleamos plazos por ti</li>
+                <li><Check size={15} strokeWidth={2.5} />Cubrimos nichos raros — 35 años buscando pólizas</li>
+                <li><Check size={15} strokeWidth={2.5} />Conocemos tu historial entero cuando toca renovar</li>
+              </ul>
+            </article>
           </div>
         </div>
       </section>
@@ -261,46 +319,6 @@ export default function MockupDPage() {
         </div>
       </section>
 
-      {/* =============== 5. DIFERENCIADOR (signature #2 — 35 oversize gradient) =============== */}
-      <section className="d-differ" id="diferenciador">
-        <div className="d-container">
-          <div className="d-differ__inner">
-            <div className="d-differ__big">
-              <span className="d-kicker" style={{ color: "var(--d-yellow)" }}>
-                Orquestación total
-              </span>
-              <div>
-                <span className="d-differ__big-num" aria-label={`${empresa.años} años`}>{empresa.años}</span>
-                <span className="d-differ__big-plus">+</span>
-              </div>
-              <p className="d-differ__big-label">
-                años conectando clientes con la mejor aseguradora para cada caso
-              </p>
-            </div>
-
-            <div className="d-differ__copy">
-              <h2 className="d-display d-differ__title">
-                Una correduría multi-aseguradora, <em>humana y titulada.</em>
-              </h2>
-              <div className="d-differ__pillars">
-                {diferenciadores.map((d) => {
-                  const Icon = pillarIcons[d.icon] ?? ShieldCheck;
-                  return (
-                    <div key={d.title} className="d-differ__pillar">
-                      <div className="d-differ__pillar-icon">
-                        <Icon size={16} strokeWidth={2} />
-                      </div>
-                      <h4 className="d-differ__pillar-title">{d.title}</h4>
-                      <p className="d-differ__pillar-body">{d.body}</p>
-                    </div>
-                  );
-                })}
-              </div>
-            </div>
-          </div>
-        </div>
-      </section>
-
       {/* =============== 6. INSURERS =============== */}
       <section className="d-insurers" aria-label="Aseguradoras colaboradoras">
         <div className="d-container d-insurers__label">
@@ -325,10 +343,7 @@ export default function MockupDPage() {
           <div className="d-plan__grid">
             {planSteps.map((s, i) => (
               <article key={s.step} className="d-plan__step">
-                <div className="d-plan__num">
-                  {s.step}
-                  <sup>/03</sup>
-                </div>
+                <div className="d-plan__num">{s.step}</div>
                 <h3 className="d-plan__step-title">{s.title}</h3>
                 <p className="d-plan__step-body">{s.description}</p>
               </article>
@@ -421,9 +436,12 @@ export default function MockupDPage() {
       <section className="d-faq" id="faq">
         <div className="d-container">
           <div className="d-faq__inner">
-            <div>
+            <div className="d-faq__head">
               <span className="d-kicker">Preguntas frecuentes</span>
               <h2 className="d-heading d-faq__title">Dudas honestas, respuestas claras.</h2>
+              <p className="d-faq__sub">
+                Todo lo que nos preguntan antes de contratar una correduría, respondido sin tecnicismos.
+              </p>
             </div>
             <div className="d-faq__list">
               {faqs.map((f, i) => (
@@ -510,7 +528,7 @@ export default function MockupDPage() {
             <div className="d-footer__col">
               <h4>Segurgama</h4>
               <ul className="d-footer__links">
-                <li><a href="#diferenciador">Por qué nosotros</a></li>
+                <li><a href="#humanos-vs-bots">Humanos vs bots</a></li>
                 <li><a href="#equipo">Equipo</a></li>
                 <li><a href="#faq">FAQ</a></li>
                 <li><a href="#plan">Cómo trabajamos</a></li>
