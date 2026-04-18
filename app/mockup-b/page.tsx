@@ -42,10 +42,12 @@ export default function MockupBPage() {
           />
         </Link>
         <nav className="b-nav__links">
-          <a href="#ramos" className="b-nav__link">Seguros</a>
-          <a href="#compara" className="b-nav__link">Humanos vs bots</a>
-          <a href="#plan" className="b-nav__link">Cómo funciona</a>
-          <a href="#faq" className="b-nav__link">FAQ</a>
+          <a href="#cotiza-coche" className="b-nav__link">Coche</a>
+          <a href="#cotiza-hogar" className="b-nav__link">Hogar</a>
+          <a href="#cotiza-salud" className="b-nav__link">Salud</a>
+          <a href="#cotiza-vida" className="b-nav__link">Vida</a>
+          <a href="#cotiza-accidentes" className="b-nav__link">Accidentes</a>
+          <a href="#ramos" className="b-nav__link">Otros seguros</a>
         </nav>
         <div className="b-nav__status">
           <span className="b-nav__status-dot" />

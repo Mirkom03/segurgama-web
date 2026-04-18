@@ -84,11 +84,12 @@ export default function MockupAPage() {
             />
           </Link>
           <nav className="a-nav__links">
-            <a href="#ramos" className="a-nav__link">Seguros</a>
-            <a href="#diferenciador" className="a-nav__link">Por qué nosotros</a>
-            <a href="#plan" className="a-nav__link">Cómo funciona</a>
-            <a href="#equipo" className="a-nav__link">Equipo</a>
-            <a href="#faq" className="a-nav__link">FAQ</a>
+            <a href="#cotiza-coche" className="a-nav__link">Coche</a>
+            <a href="#cotiza-hogar" className="a-nav__link">Hogar</a>
+            <a href="#cotiza-salud" className="a-nav__link">Salud</a>
+            <a href="#cotiza-vida" className="a-nav__link">Vida</a>
+            <a href="#cotiza-accidentes" className="a-nav__link">Accidentes</a>
+            <a href="#ramos" className="a-nav__link">Otros seguros</a>
           </nav>
           <div className="a-nav__advisor" title="Asesor disponible">
             <span className="a-nav__advisor-dot" />
@@ -193,6 +194,48 @@ export default function MockupAPage() {
         </div>
       </section>
 
+      {/* =============== 3.5. RAMOS (catálogo debajo del hero) =============== */}
+      <section className="a-ramos" id="ramos">
+        <div className="a-container">
+          <div className="a-ramos__header">
+            <div>
+              <span className="a-kicker">Todo lo que puedes asegurar</span>
+              <h2 className="a-display a-ramos__title" style={{ marginTop: "0.5rem" }}>
+                Elige qué quieres asegurar.
+              </h2>
+            </div>
+            <p className="a-ramos__subtitle">
+              Todos los seguros del mercado, desde coche y hogar hasta bodegas, drones y mascotas exóticas. Si alguien lo cubre en España, lo encontramos nosotros.
+            </p>
+          </div>
+
+          <div className="a-ramos__grid">
+            {ramos.map((r: Ramo) => {
+              const Icon = ramoIcons[r.slug] ?? Shield;
+              const isSpecial = r.slug === "otros";
+              return (
+                <a
+                  key={r.slug}
+                  href={`#cotiza-${r.slug}`}
+                  className={`a-ramo-card ${isSpecial ? "a-ramo-card--special" : ""}`}
+                  id={`ramo-${r.slug}`}
+                >
+                  <div className="a-ramo-card__icon">
+                    <Icon size={20} strokeWidth={2} />
+                  </div>
+                  <h3 className="a-ramo-card__title">{r.title}</h3>
+                  <p className="a-ramo-card__blurb">{r.blurb}</p>
+                  <span className="a-ramo-card__cta">
+                    {r.cta}
+                    <ArrowUpRight size={14} strokeWidth={2.5} />
+                  </span>
+                </a>
+              );
+            })}
+          </div>
+        </div>
+      </section>
+
       {/* =============== 4. PROBLEMA / VILLANO =============== */}
       <section className="a-problem" id="por-que">
         <div className="a-container">
@@ -249,48 +292,6 @@ export default function MockupAPage() {
                 </div>
               </li>
             </ul>
-          </div>
-        </div>
-      </section>
-
-      {/* =============== 5. RAMOS GRID =============== */}
-      <section className="a-ramos" id="ramos">
-        <div className="a-container">
-          <div className="a-ramos__header">
-            <div>
-              <span className="a-kicker">Seguros que cubrimos</span>
-              <h2 className="a-display a-ramos__title" style={{ marginTop: "0.5rem" }}>
-                Elige qué quieres asegurar.
-              </h2>
-            </div>
-            <p className="a-ramos__subtitle">
-              Más de 20 ramos, desde coche y hogar hasta bodegas, drones y mascotas exóticas. Si alguien lo cubre en España, lo encontramos nosotros.
-            </p>
-          </div>
-
-          <div className="a-ramos__grid">
-            {ramos.map((r: Ramo) => {
-              const Icon = ramoIcons[r.slug] ?? Shield;
-              const isSpecial = r.slug === "otros";
-              return (
-                <a
-                  key={r.slug}
-                  href={`#cotiza-${r.slug}`}
-                  className={`a-ramo-card ${isSpecial ? "a-ramo-card--special" : ""}`}
-                  id={`ramo-${r.slug}`}
-                >
-                  <div className="a-ramo-card__icon">
-                    <Icon size={20} strokeWidth={2} />
-                  </div>
-                  <h3 className="a-ramo-card__title">{r.title}</h3>
-                  <p className="a-ramo-card__blurb">{r.blurb}</p>
-                  <span className="a-ramo-card__cta">
-                    {r.cta}
-                    <ArrowUpRight size={14} strokeWidth={2.5} />
-                  </span>
-                </a>
-              );
-            })}
           </div>
         </div>
       </section>
