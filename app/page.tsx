@@ -20,6 +20,15 @@ const mockups = [
       "Fresh digital con alma: la energía ágil de un comparador moderno pero con humanos visibles. Signature: chip-selector hero con form inline + comparador humano-vs-bot.",
   },
   {
+    id: "c",
+    name: "Cálido mediterráneo",
+    palette: "Crema + Teja burdeos + Navy + Oliva",
+    type: "General Sans · Inter · Fraunces 500 (display puntual)",
+    anchor: "Mutua Propietarios + Ferrer&Ojeda (lado cálido)",
+    summary:
+      "Humano mediterráneo profesional: editorial sobrio con calidez, sin italic. Signature: número '35' oversize editorial + testimonio cita ancho completo.",
+  },
+  {
     id: "d",
     name: "Derivado del logo",
     palette: "Navy + Lima + Amarillo + Cream (desde el logo cliente)",
