@@ -3,21 +3,17 @@
 import { useRef, useState } from "react";
 import {
   Car, Home as HomeIcon, HeartPulse, Shield, Dog, Briefcase,
-  Building2, Tractor, Ship, HardHat, UtensilsCrossed, Sparkles, Activity, Scale,
+  Building2, Tractor, Ship, HardHat, UtensilsCrossed, Sparkles,
   ChevronDown, Menu, X, Phone, ArrowRight, ArrowUpRight,
 } from "lucide-react";
 import type { Ramo } from "@/lib/content";
 
 const icons: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number }>> = {
   coche: Car, hogar: HomeIcon, salud: HeartPulse, vida: Shield,
-  accidentes: Activity, mascotas: Dog,
-  "rc-autonomos": Briefcase, "rc-empresas": Scale,
-  "empresa-pyme": Building2, "agro-maquinaria": Tractor, nautico: Ship,
-  construccion: HardHat, hosteleria: UtensilsCrossed, otros: Sparkles,
+  mascotas: Dog, "rc-profesional": Briefcase, "empresa-pyme": Building2,
+  "agro-maquinaria": Tractor, nautico: Ship, construccion: HardHat,
+  hosteleria: UtensilsCrossed, otros: Sparkles,
 };
-
-// Seguros destacados visibles directamente en el navbar desktop (estilo El Corte Inglés Seguros)
-const featuredSlugs = ["coche", "hogar", "salud", "vida", "accidentes", "empresa-pyme"];
 
 type GroupKey = "particular" | "profesional" | "empresa" | "especial";
 
@@ -67,15 +63,6 @@ export default function NavMega({ ramos, telefono }: Props) {
   return (
     <>
       <nav className="d-nav__links">
-        {featuredSlugs.map((slug) => {
-          const r = ramos.find((x) => x.slug === slug);
-          if (!r) return null;
-          return (
-            <a key={slug} href={`#cotiza-${slug}`} className="d-nav__link">
-              {r.title.split(" ")[0]}
-            </a>
-          );
-        })}
         <div
           className="d-mega__wrap"
           onMouseEnter={openMega}
@@ -88,10 +75,14 @@ export default function NavMega({ ramos, telefono }: Props) {
             aria-haspopup="true"
             onClick={() => setMegaOpen((o) => !o)}
           >
-            Otros seguros
+            Seguros
             <ChevronDown size={14} strokeWidth={2.5} />
           </button>
         </div>
+        <a href="#humanos-vs-bots" className="d-nav__link">Humanos vs bots</a>
+        <a href="#equipo" className="d-nav__link">Equipo</a>
+        <a href="#faq" className="d-nav__link">FAQ</a>
+        <a href="#cotiza" className="d-nav__link">Contacto</a>
       </nav>
 
       <a href="#cotiza" className="d-nav__cta">
@@ -116,14 +107,11 @@ export default function NavMega({ ramos, telefono }: Props) {
       >
         <div className="d-container d-mega__inner">
           <div className="d-mega__grid">
-            {(Object.keys(groupLabels) as GroupKey[]).map((key) => {
-              const itemsOther = grouped[key].filter((r) => !featuredSlugs.includes(r.slug));
-              if (itemsOther.length === 0) return null;
-              return (
+            {(Object.keys(groupLabels) as GroupKey[]).map((key) => (
               <div className="d-mega__col" key={key}>
                 <span className="d-mega__col-label">{groupLabels[key]}</span>
                 <ul className="d-mega__list">
-                  {itemsOther.map((r) => {
+                  {grouped[key].map((r) => {
                     const Icon = icons[r.slug] ?? Shield;
                     return (
                       <li key={r.slug}>
@@ -145,8 +133,7 @@ export default function NavMega({ ramos, telefono }: Props) {
                   })}
                 </ul>
               </div>
-              );
-            })}
+            ))}
           </div>
           <div className="d-mega__foot">
             <span className="d-mega__foot-line">

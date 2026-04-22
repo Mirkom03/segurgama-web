@@ -15,10 +15,9 @@ import "./mockup-d.css";
 
 const ramoIcons: Record<string, React.ComponentType<{ size?: number; strokeWidth?: number }>> = {
   coche: Car, hogar: HomeIcon, salud: HeartPulse, vida: Shield,
-  accidentes: Shield, mascotas: Dog,
-  "rc-autonomos": Briefcase, "rc-empresas": Building2,
-  "empresa-pyme": Building2, "agro-maquinaria": Tractor, nautico: Ship,
-  construccion: HardHat, hosteleria: UtensilsCrossed, otros: Sparkles,
+  mascotas: Dog, "rc-profesional": Briefcase, "empresa-pyme": Building2,
+  "agro-maquinaria": Tractor, nautico: Ship, construccion: HardHat,
+  hosteleria: UtensilsCrossed, otros: Sparkles,
 };
 
 // Órbita aseguradoras: posiciones fijas en distintos ángulos y radios
@@ -158,46 +157,6 @@ export default function MockupDPage() {
         </div>
       </section>
 
-      {/* =============== 2.3. CATÁLOGO DE SEGUROS (justo debajo del hero) =============== */}
-      <section className="d-ramos" id="ramos">
-        <div className="d-container">
-          <div className="d-ramos__head">
-            <div>
-              <span className="d-kicker">Todo lo que puedes asegurar</span>
-              <h2 className="d-heading d-ramos__title">Elige qué quieres asegurar.</h2>
-            </div>
-            <p className="d-ramos__sub">
-              Todos los seguros del mercado, desde coche y hogar hasta bodegas, drones y mascotas exóticas. Si alguien lo cubre en España, lo encontramos nosotros.
-            </p>
-          </div>
-
-          <div className="d-ramos__grid">
-            {ramos.map((r: Ramo) => {
-              const Icon = ramoIcons[r.slug] ?? Shield;
-              const special = r.slug === "otros";
-              return (
-                <a
-                  key={r.slug}
-                  href="#cotiza"
-                  id={`ramo-${r.slug}`}
-                  className={`d-ramo ${special ? "d-ramo--special" : ""}`}
-                >
-                  <div className="d-ramo__icon">
-                    <Icon size={20} strokeWidth={2} />
-                  </div>
-                  <h3 className="d-ramo__title">{r.title}</h3>
-                  <p className="d-ramo__blurb">{r.blurb}</p>
-                  <span className="d-ramo__cta">
-                    {r.cta}
-                    <ArrowUpRight size={14} strokeWidth={2.5} />
-                  </span>
-                </a>
-              );
-            })}
-          </div>
-        </div>
-      </section>
-
       {/* =============== 2.5. SELECTOR PRESUPUESTO =============== */}
       <section className="d-selector" id="cotiza-rapido">
         <div className="d-container">
@@ -307,6 +266,46 @@ export default function MockupDPage() {
                 </div>
               </li>
             </ul>
+          </div>
+        </div>
+      </section>
+
+      {/* =============== 4. RAMOS =============== */}
+      <section className="d-ramos" id="ramos">
+        <div className="d-container">
+          <div className="d-ramos__head">
+            <div>
+              <span className="d-kicker">Seguros que cubrimos</span>
+              <h2 className="d-heading d-ramos__title">Elige qué quieres asegurar.</h2>
+            </div>
+            <p className="d-ramos__sub">
+              Todos los seguros del mercado, desde coche y hogar hasta bodegas, drones y mascotas exóticas. Si alguien lo cubre en España, lo encontramos nosotros.
+            </p>
+          </div>
+
+          <div className="d-ramos__grid">
+            {ramos.map((r: Ramo) => {
+              const Icon = ramoIcons[r.slug] ?? Shield;
+              const special = r.slug === "otros";
+              return (
+                <a
+                  key={r.slug}
+                  href="#cotiza"
+                  id={`ramo-${r.slug}`}
+                  className={`d-ramo ${special ? "d-ramo--special" : ""}`}
+                >
+                  <div className="d-ramo__icon">
+                    <Icon size={20} strokeWidth={2} />
+                  </div>
+                  <h3 className="d-ramo__title">{r.title}</h3>
+                  <p className="d-ramo__blurb">{r.blurb}</p>
+                  <span className="d-ramo__cta">
+                    {r.cta}
+                    <ArrowUpRight size={14} strokeWidth={2.5} />
+                  </span>
+                </a>
+              );
+            })}
           </div>
         </div>
       </section>
