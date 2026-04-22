@@ -102,7 +102,7 @@ export default function MockupAPage() {
       </header>
 
       {/* =============== 2. HERO =============== */}
-      <section className="a-hero" id="inicio">
+      <section className="a-hero" id="inicio" data-hero>
         <div className="a-container">
           <div className="a-hero__grid">
             <div className="a-hero__copy">

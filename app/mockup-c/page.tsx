@@ -45,7 +45,7 @@ export default function MockupCPage() {
       </header>
 
       {/* =============== 2. HERO =============== */}
-      <section className="c-hero" id="inicio">
+      <section className="c-hero" id="inicio" data-hero>
         <div className="c-container">
           <div className="c-hero__grid">
             <div className="c-hero__big">

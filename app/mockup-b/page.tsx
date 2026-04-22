@@ -58,7 +58,7 @@ export default function MockupBPage() {
       </header>
 
       {/* =============== 2. HERO =============== */}
-      <section className="b-hero" id="inicio">
+      <section className="b-hero" id="inicio" data-hero>
         <div className="b-container">
           <div className="b-hero__inner">
             <div className="b-hero__head">

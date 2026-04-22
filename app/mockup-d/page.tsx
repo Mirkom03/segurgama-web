@@ -86,7 +86,7 @@ export default function MockupDPage() {
       </header>
 
       {/* =============== 2. HERO =============== */}
-      <section className="d-hero" id="inicio">
+      <section className="d-hero" id="inicio" data-hero>
         <div className="d-container">
           <div className="d-hero__grid">
             <div className="d-hero__copy">
